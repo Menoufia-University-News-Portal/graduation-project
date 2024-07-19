@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'ElMessiri-Bold';
+    src: url('../../../Fonts/ElMessiri-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ElMessiri-Regular';
+    src: url('../../../Fonts/ElMessiri-Regular.ttf') format('truetype');
+}
+
+.news-container5 {
+    font-family: 'ElMessiri-Bold';
+    background: #9c4c19;
+}
+
+.news-container5 h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    animation: changeFace 20s infinite;
+    color: white;
+    margin-top: 10px;
+}
+
+@keyframes changeFace {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    75% {
+        transform: rotateY(270deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+/* AnimeTabe.css */
+
+  
+  .news-box {
+    background-color: #8e7a4c;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'ElMessiri-Bold';
+    transition: all 0.1s ease-in-out;
+  }
+  

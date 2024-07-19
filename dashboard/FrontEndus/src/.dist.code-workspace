@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "../../.dist"
+		},
+		{
+			"path": "../../BackEnd"
+		},
+		{
+			"path": "../../backend_after_adding_gallery"
+		},
+		{
+			"path": "../../BackEnd_us"
+		},
+		{
+			"path": "../../BackEnd_Us_AfterUploadsRepair"
+		},
+		{
+			"path": "../../BackEndonelink"
+		},
+		{
+			"path": "../../FrontEnd"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../LastBackEnd"
+		}
+	]
+}

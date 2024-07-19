@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'ElMessiri-Bold';
+  src: url('../../../../Fonts/ElMessiri-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ElMessiri-Regular';
+  src: url('../../../../Fonts/ElMessiri-Regular.ttf') format('truetype');
+}
+
+.popularPost .title1 {
+  font-size: x-large;
+}
+
+.popularPost .box {
+  margin: 15px 15px 15px 0;
+  height: auto; /* Changed to auto for flexible height */
+}
+
+.popularPost img {
+  width: 100%;
+  height: auto; /* Changed to auto for flexible height */
+  max-height: 240px; /* Set a max-height to ensure images do not get too large */
+  object-fit: cover;
+}
+
+.popularPost .text1 {
+  padding: 20px;
+  font-family: 'ElMessiri-Bold';
+}
+
+.news-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'ElMessiri-Regular';
+}
+
+@media (max-width: 1200px) {
+  .popularPost .box {
+    height: auto;
+  }
+
+  .popularPost img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .popularPost .title1 {
+    font-size: large;
+  }
+
+  .popularPost img {
+    max-height: 180px;
+  }
+
+  .popularPost .text1 {
+    padding: 15px;
+  }
+
+  .news-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popularPost .title1 {
+    font-size: medium;
+  }
+
+  .popularPost img {
+    max-height: 160px;
+  }
+
+  .popularPost .text1 {
+    padding: 10px;
+  }
+
+  .news-description {
+    font-size: 12px;
+  }
+}

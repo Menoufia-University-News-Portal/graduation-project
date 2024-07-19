@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'ElMessiri-Bold';
+  src: url('../../../../Fonts/ElMessiri-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ElMessiri-Regular';
+  src: url('../../../../Fonts/ElMessiri-Regular.ttf') format('truetype');
+}
+
+.SecondSection .title1 {
+  font-size: x-large;
+}
+
+.SecondSection .box {
+  margin: 15px 15px 15px 0;
+  height:auto;
+}
+
+.SecondSection img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding-top: 40px;
+  padding-right: 10px;
+  
+}
+
+.SecondSection .text2 {
+  padding: 20px;
+  font-family: 'ElMessiri-Bold';
+}
+
+.desc {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'ElMessiri-Regular';
+}
+
+@media (max-width: 1024px) {
+  .SecondSection .title1 {
+    font-size: large;
+  }
+
+  .SecondSection img {
+    height: 200px;
+  }
+
+  .SecondSection .text2 {
+    padding: 15px;
+  }
+
+  .desc {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .SecondSection .title1 {
+    font-size: medium;
+  }
+
+  .SecondSection img {
+    height: 180px;
+  }
+
+  .SecondSection .text2 {
+    padding: 10px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .SecondSection .box {
+   
+  }
+  .SecondSection .title1 {
+    font-size: small;
+  }
+
+  .SecondSection img {
+    height: 220px;
+   
+    
+  }
+
+  .SecondSection .text2 {
+    padding: 5px;
+  }
+
+  .desc {
+    font-size: 10px;
+  }
+  
+}

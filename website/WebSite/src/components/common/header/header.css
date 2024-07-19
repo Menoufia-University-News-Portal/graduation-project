@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'ElMessiri-Bold';
+  src: url('../../../Fonts/ElMessiri-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ElMessiri-Regular';
+  src: url('../../../Fonts/ElMessiri-Regular.ttf') format('truetype');}
+  
+  .drobdown-li{
+ 
+ justify-content: start;
+  }
+.dropdown-top{
+  color: #fff;
+ font-size: large;
+  font-weight: 700;
+  border: none;
+  padding-top: 0px;
+ 
+}
+.dropdown-menuitem{
+  text-align: center;
+}
+  
+
+header {
+  z-index: 9999999;
+  background-color: #000;
+  color: #fff;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center !important ;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  
+}
+header li {
+  margin-left: 30px;
+  transition: 0.5s;
+  font-family: 'ElMessiri-Bold';
+  font-weight: 700;
+  font-style: normal;
+  font-size: larger;
+  margin-right: 10px;
+  
+
+}
+.active{
+  color: rgb(107, 119, 122);
+}
+ header   ul li a:not(.active):hover{
+    cursor: pointer;
+    color: rgb(107, 119, 122);
+     text-decoration: cadetblue;
+ 
+}
+
+header li::before{
+    content: '' ;
+    width: 8px;
+    height: 100%;
+   
+    margin-right: calc(1rem - 8p);
+}
+
+
+
+
+
+header a {
+  color: #fff;
+}
+.barIcon {
+  font-size: 25px;
+  background: none;
+  color: #fff;
+  display: none;
+  border: none;
+}
+@media screen and (max-width: 1330px) {
+  
+  .barIcon {
+    display: flex;
+  }
+
+  header ul {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(13, 14, 14);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 5;
+  }
+  header ul.navbar {
+    display: flex;
+  }
+  header ul li {
+    margin: 2px 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li a {
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+}

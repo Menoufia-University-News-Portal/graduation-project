@@ -1,0 +1,130 @@
+.error {
+  color: red;
+  font-size: 20px;
+  margin-top: 2;
+}
+
+.custom-progress {
+  width: 100%;
+  height: 9px;
+  border-radius: 10px;
+  background-color: rgb(214, 212, 212);
+  display: block;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.inner-progress {
+  position: relative;
+  background-color: crimson;
+  height: 100%;
+  display: block;
+  width: 50%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.3s;
+  -webkit-transition: 10px;
+  -moz-transition: 10px;
+  -ms-transition: 10px;
+  -o-transition: 10px;
+}
+
+.inner-progress::after {
+  content: attr(percent);
+  position: absolute;
+  top: -25px;
+  right: 0;
+  background-color: rgb(116, 116, 116);
+  color: white;
+  width: 38px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+
+
+}
+
+.button33 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.button33 span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: crimson;
+  border-radius: 50%;
+  transition: .6s ease;
+}
+
+.button33 span:nth-child(6) {
+  position: relative;
+}
+
+.button33 span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+.button33 span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+.button33 span:nth-child(3) {
+  transform: translate(-.2em, 1.8em);
+}
+
+.button33 span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+.button33 span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+
+.button33:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.form-header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-error {
+  color: #f00;
+  /* margin-bottom: 16px; */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.text-danger {
+  margin-left: 60px;
+  font-weight: bold;
+}

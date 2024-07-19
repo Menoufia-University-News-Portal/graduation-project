@@ -1,0 +1,27 @@
+main .container88 {
+  display: flex;
+  justify-content: center;
+  
+}
+.mainContent {
+  width: 80%;
+}
+
+.sideContent .heading5 h6 {
+  background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  main .container88 {
+    flex-direction: column;
+  }
+  .mainContent {
+    width: 100%;
+  }
+  .sideContent {
+    width: 100%;
+  }
+}
+
+
+

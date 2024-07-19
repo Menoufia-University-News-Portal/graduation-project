@@ -1,0 +1,80 @@
+/* .card5{
+    width: 300px;
+    height: 480px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1 px black;
+}
+.upper-container{
+    height: 100px;
+    background: linear-gradient(to left , #2d00f7 , #ff0291);
+} */
+
+
+/* .card5 {
+    margin-left: 100px;
+    padding: 20px;
+    box-shadow: 0 0 10px #c3bbee;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.card5 .top {
+    text-align: center;
+}
+
+.card5 p {
+    font-weight: bold;
+    color: crimson;
+} */
+
+.card5 .upper-container{
+    height: 220px;
+    background: linear-gradient(to left , rgb(41, 31, 31), crimson , rgb(47, 2, 2));
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  
+    
+    margin-top: 10px; 
+}
+/* 
+.card5 .image-container img{
+    background: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 470px;
+    padding: 5px;
+    transform: translate(100px,120px);
+    border:3px solid rgba(179, 127, 127, 0);
+
+} */
+
+/* .card5 .lower-container{
+    height: 300px;
+    background: white;
+    margin-top: 150px;
+    text-align: left;
+} */
+
+
+
+ 
+
+ .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fbc2eb;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(251, 194, 235, 1), rgba(166, 193, 238, 1))
+    } 
+
+
+
+

@@ -1,0 +1,43 @@
+.tobic {
+    line-height: 1.9; 
+    width: auto; 
+    padding-right: 30px;
+    box-shadow: inset 0 -2px 0 #f47363;
+    word-wrap: break-word;
+    font-size: 2.25em;
+    font-weight: 300;
+    font-family: 'ElMessiri-Bold';
+    margin: 50px 10% 0;
+    text-align: center;
+}
+
+.paragraphe {
+    font-family: 'ElMessiri-Regular';
+    font-size: 1.25em;
+    text-align: justify;
+    margin: 40px 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .tobic {
+        font-size: 2em;
+        margin: 50px 5% 0;
+    }
+    
+    .paragraphe {
+        font-size: 1.1em;
+        margin: 20px 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tobic {
+        font-size: 1.75em;
+        margin: 50px 2% 0;
+    }
+    
+    .paragraphe {
+        font-size: 1em;
+        margin: 20px 2%;
+    }
+}

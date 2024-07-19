@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'ElMessiri-Bold';
+    src: url('../../Fonts/ElMessiri-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ElMessiri-Regular';
+    src: url('../../Fonts/ElMessiri-Regular.ttf') format('truetype');
+}
+
+.all {
+    display: flex;
+    gap: 30px;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.all p,
+h3 {
+
+    font-family: 'ElMessiri-Regular';
+    font-size: 18px;
+}
+
+.img {
+    height: 260px;
+    width: 100%
+}
+
+.owl-theme {
+    margin-top: 10px;
+    width: 100%;
+}

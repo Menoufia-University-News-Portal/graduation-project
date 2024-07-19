@@ -1,0 +1,70 @@
+.parallax-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+.subscribe {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 600px;
+  border: none;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.inp {
+  border-radius: 8px;
+  border-color: burlywood;
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.button101 {
+  border-radius: 8px;
+  padding: 10px 20px;
+  background: burlywood;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.button101 i {
+  margin-right: 5px;
+}
+
+.title88 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+      width: 90%;
+  }
+
+  .title88 {
+      font-size: 20px;
+  }
+
+  .inp {
+      width: 100%;
+  }
+
+  .button101 {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title88 {
+      font-size: 18px;
+  }
+}

@@ -1,0 +1,45 @@
+.tt {
+    margin: 50px 10% 0;
+    line-height: 1.9;
+    width: auto;
+    padding-right: 30px;
+    box-shadow: inset 0 -2px 0 #f47363;
+    word-wrap: break-word;
+    font-size: 2.25em;
+    font-weight: 300;
+    font-family: 'ElMessiri-Bold';
+    text-align: center;
+}
+
+.pp {
+    margin: 40px 10%;
+    font-family: 'ElMessiri-Regular';
+    font-size: 1.25em;
+    text-align: justify;
+}
+
+.paragraphe22 {
+    font-family: 'ElMessiri-Regular';
+}
+
+@media screen and (max-width: 768px) {
+    .tt {
+        font-size: 2em;
+        margin: 50px 5% 0;
+    }
+    .pp, .paragraphe22 {
+        font-size: 1.1em;
+        margin: 20px 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tt {
+        font-size: 1.75em;
+        margin: 50px 2% 0;
+    }
+    .pp, .paragraphe22 {
+        font-size: 1em;
+        margin: 20px 2%;
+    }
+}

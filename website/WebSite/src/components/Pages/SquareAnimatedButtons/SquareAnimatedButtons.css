@@ -1,0 +1,82 @@
+.button-container {
+    position: fixed; /* Fixed position to the left */
+    top: 50%; /* Center vertically */
+    left: 0; /* Align to the left */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Align buttons to the left */
+  }
+  
+  .animated-button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px; /* Space between buttons */
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    
+  }
+  .facebook-icon {
+    background-color: #3b5998; /* Facebook Blue */
+    color: #fff; /* White */
+  }
+  .facebook-button:hover {
+    background-color: #3b5998; /* Facebook Blue */
+  }
+  
+  .youtube-button:hover {
+    background-color: #ff0000; /* YouTube Red */
+  }
+  
+  
+  .youtube-icon {
+    background-color: #ff0000; /* YouTube Red */
+    color: #fff; /* White */
+  }
+  
+  /* Adjust padding and border-radius as needed */
+  .icon {
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .animated-button .text {
+    display: none; 
+    /* Initially hide the text */
+  }
+  
+  .animated-button:hover {
+    width: 200px; /* Adjust width on hover */
+  }
+  
+  .animated-button:hover .icon {
+    display: none; /* Hide icon on hover */
+  }
+  
+  .animated-button:hover .text {
+    display: block; /* Show text on hover */
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .text {
+    margin-top: 5px;
+  }
+  
+  .animated-button:not(:hover) {
+    transition: none; /* Disable transition for non-hovered buttons */
+  }
+  
