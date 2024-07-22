@@ -41,16 +41,21 @@ import { Subscriber } from './typeOrm/entities/subscriber.entity';
 import { SubscriberModule } from './subscriber/subscriber.module';
 import { GalleryModule } from './gallery/gallery.module';
 import { Gallery } from './typeOrm/entities/gallery.entity';
+import { ConfigModule } from '@nestjs/config';
+import { HealthCheckModule } from './health_check/health_check.module';
 
 @Module({
-  imports: [ AdminModule,
+  imports: [ AdminModule, ConfigModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+    }),
     TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: 'root',
-      database: 'final_graduation_project_db',
+      type: process.env.TYPE || "mysql" as any,
+      host: process.env.HOST || "localhost",
+      port: process.env.PORT || 3306 as any,
+      username: process.env.USERNAME || "root",
+      password: process.env.PASSWORD || "root",
+      database: process.env.DATABASE || "final_graduation_project_db",
       entities: [Admin, Permission, Password, Faculty, Country, Timezone, Event, News, Department, Staff, BlackList, ComersNews, SectorHeadNews, UniLeader, Gallery, Subscriber],
       synchronize: true,
     }),
@@ -96,6 +101,7 @@ import { Gallery } from './typeOrm/entities/gallery.entity';
     MailModule,
     SubscriberModule,
     GalleryModule,
+    HealthCheckModule,
    
     //ServeStaticModule.forRoot({rootPath: join(__dirname, '..', 'news_uploads')}, {rootPath: join(__dirname, '..', 'uploads')}, {rootPath: join(__dirname, '..', 'comersNews_uploads')}, {rootPath: join(__dirname, '..', 'sectorHeadNews_uploads')})
   ],

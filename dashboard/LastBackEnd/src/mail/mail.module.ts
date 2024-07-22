@@ -11,10 +11,10 @@ import { Subscriber } from 'src/typeOrm/entities/subscriber.entity';
 @Module({
   imports: [TypeOrmModule.forFeature([Subscriber]), PasswordModule, MailerModule.forRoot({
     transport: {
-      host: 'smtp.gmail.com',
+      host: process.env.EMAIL_HOST,
       auth: {
-        user: 'uniinsight41@gmail.com', //user: 'alaahathout1@gmail.com', ==> = from  
-        pass: 'pwfkamnjhdfwkxgi' //pass: 'ydlfchatxjzbhtie' ==> = password of the app in google settings
+        user: process.env.USER, 
+        pass: process.env.PASS 
       }
     }
   })],
